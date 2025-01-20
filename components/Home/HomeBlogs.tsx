@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import BlogCard from "./BlogCard";
 
@@ -16,7 +15,8 @@ const fetchBlogs = async () => {
 
 const HomeBlogs: React.FC = async () => {
   const data = await fetchBlogs();
-  if (data.length < 1) return null;
+
+  if (data?.length < 1) return null;
   return (
     <div className="templateContainer space-y-6 py-8 lg:py-16">
       <h2 className="text-[1.6rem] gradientHeading text-center lg:text-4xl font-medium tracking-wide uppercase">

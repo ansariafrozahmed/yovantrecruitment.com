@@ -31,10 +31,10 @@ const BlogCard: React.FC<BlogCard> = ({ data }) => {
           sizes="(min-width: 1280px) 400px, (min-width: 1040px) 304px, (min-width: 780px) 348px, (min-width: 460px) 400px, 88.57vw"
         />
       </div>
-      <h2 className="text-lg gradientHeading group-hover:text-lightGolden leading-none transition-all ease uppercase font-medium tracking-wider">
+      <h2 className="text-lg gradientHeading group-hover:text-lightGolden leading-snug transition-all ease uppercase font-medium tracking-wider">
         {data?.title}
       </h2>
-      <h3 className="tracking-wider text-gray-300 text-[0.8rem] leading-snug">
+      <h3 className="tracking-wider text-gray-300 text-[0.8rem] leading-snug line-clamp-3">
         {data.excerpt}
       </h3>
       <span className="gradientHeading group-hover:text-lightGolden text-[0.8rem] tracking-wider">

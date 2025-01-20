@@ -8,8 +8,6 @@ import ParallaxScrollSection from "@/components/Wrappers/ParallaxWrapper/Paralla
 import Image from "next/image";
 import React from "react";
 
-export const revalidate = 60;
-
 const Home = () => {
   return (
     <>

@@ -10,10 +10,10 @@
 .blogDescriptionCSS h4,
 .blogDescriptionCSS h5,
 .blogDescriptionCSS h6 {
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: #ee7737;
+  color: #fbd973;
 }
 
 .blogDescriptionCSS h1 {
@@ -60,7 +60,7 @@
 
 .blogDescriptionCSS strong,
 .blogDescriptionCSS b {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .blogDescriptionCSS em,
