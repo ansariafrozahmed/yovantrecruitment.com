@@ -1,48 +1,32 @@
 "use client";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { ReactNode, useState } from "react";
 
-const Header = () => {
+interface Props {
+  children: ReactNode;
+}
+
+const MenuSlideWrapper: React.FC<Props> = ({ children }) => {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
-  const [hasScrolled, setHasScrolled] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    let lastScrollY = 0;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 100) {
-        // Scrolling down
-        setIsVisible(false);
-      } else {
-        // Scrolling up
-        setIsVisible(true);
-      }
-
-      if (currentScrollY > 200) {
-        setHasScrolled(true);
-      } else {
-        setHasScrolled(false);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const renderHam = () => {
     return (
       <div onClick={() => setOpen(!open)} className="text-white relative">
         <div className="flex items-center gap-2 cursor-pointer transition-all ease-in-out duration-1000">
+          {/* <span
+            className={`text-lg absolute right-7 tracking-wide font-semibold transition-opacity ease-in-out duration-1000 ${
+              open ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            MENU
+          </span>
+          <span
+            className={`text-lg absolute right-7 tracking-wide font-semibold transition-opacity ease-in-out duration-1000 ${
+              open ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            CLOSE
+          </span> */}
           <div className="flex flex-col items-center mb-[1px] gap-[5px] transition-all ease-in-out duration-1000">
             <span
               className={`block h-[2px] w-5 transition-transform duration-1000 ease-in-out ${
@@ -69,7 +53,7 @@ const Header = () => {
 
   const renderMenu = () => {
     return (
-      <div className="text-white flex items-center gap-5 text-[0.7rem] lg:text-[0.75rem] font-semibold uppercase tracking-wide lg:tracking-widest">
+      <div className="text-white flex items-center gap-5  text-[0.8rem] font-semibold uppercase tracking-wider">
         <span
           className={`transition-opacity ease-in-out duration-1000 hover-class ${
             open ? "opacity-0" : "text-white"
@@ -90,19 +74,10 @@ const Header = () => {
 
   return (
     <>
-      <header
-        className={`z-50 fixed top-0 left-0 py-2 w-full transition-all ease-in-out duration-300 ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        } ${hasScrolled ? "bg-black" : ""}`}
-      >
+      <header className="z-40 fixed top-0 left-0 py-2 w-full">
         <div className="templateContainer flex items-center justify-between">
-          <div
-            className={`transition-all ease-in-out duration-300 ${
-              hasScrolled
-                ? "h-[50px] lg:h-[60px] w-[50px] lg:w-[60px]"
-                : "h-[60px] lg:h-[75px] w-[60px] lg:w-[75px]"
-            }`}
-          >
+          {/* Logo */}
+          <div className="h-[75px] w-[75px]">
             <Image
               src="/assets/logo/webp/8.webp"
               alt="Logo"
@@ -118,13 +93,26 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div
-        className={`fixed top-0 right-0 h-screen w-[300px] transition-all ease-in-out duration-500 bg-black z-40 ${
-          open ? "translate-x-0" : "translate-x-[300px]"
-        }`}
-      ></div>
+      <div className="min-h-auto h-screen w-full overflow-x-hidden flex relative">
+        <div
+          className={`min-h-screen overflow-y-auto h-full min-w-[100%] transform transition-transform duration-1000 ${
+            open
+              ? "-translate-x-[250px] lg:-translate-x-[350px]"
+              : "translate-x-0"
+          }`}
+        >
+          {children}
+        </div>
+        <div
+          className={`min-h-full h-screen overflow-y-auto min-w-[250px] lg:min-w-[350px] translate-x-0 transform transition-transform duration-1000 ${
+            open
+              ? "-translate-x-[250px] lg:-translate-x-[350px]"
+              : "translate-x-0"
+          }`}
+        ></div>
+      </div>
     </>
   );
 };
 
-export default Header;
+export default MenuSlideWrapper;
