@@ -98,21 +98,25 @@ const Footer = () => {
             CONTACT DETAILS
           </h2>
           <div className="w-[100px] h-[2px] bg-gradient-to-r rounded from-darkGolden to-lightGolden"></div>
-          <div className="space-y-2 md:space-y-4 text-sm font-light">
+          <div className="space-y-2 md:space-y-5 text-sm font-light">
             <div className="flex items-center gap-2 tracking-wide ">
-              <MapPin size={20} strokeWidth={1.5} />
+              <MapPin color="#FBD973" size={20} strokeWidth={1.5} />
+              <p>BB 709, Jafza One, Jebel Ali, Dubai, UAE</p>
+            </div>
+            <div className="flex items-center gap-2 tracking-wide ">
+              <MapPin color="#FBD973" size={20} strokeWidth={1.5} />
               <p>Sharjah, Media City, Sharjah, UAE</p>
             </div>
             <div className="flex items-center gap-2 tracking-wide ">
-              <Phone size={20} strokeWidth={1.5} />
+              <Phone color="#FBD973" size={20} strokeWidth={1.5} />
               <p>+971 5 5332 6843</p>
             </div>
             <div className="flex items-center gap-2 tracking-wide ">
-              <Phone size={20} strokeWidth={1.5} />
+              <Phone color="#FBD973" size={20} strokeWidth={1.5} />
               <p>+971 5 8528 8858</p>
             </div>
             <div className="flex items-center gap-2 tracking-wide ">
-              <Mail size={20} strokeWidth={1.5} />
+              <Mail color="#FBD973" size={20} strokeWidth={1.5} />
               <p>info@yovantrecruitment.com</p>
             </div>
           </div>

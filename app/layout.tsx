@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Layouts/Footer/Footer";
-import MenuSlideWrapper from "@/components/Wrappers/MenuSlideWrapper";
 import localFont from "next/font/local";
 import SmoothScroll from "@/components/Wrappers/SmoothScroll";
 import Header from "@/components/Layouts/Header/Header";
+import NextTopLoader from "nextjs-toploader";
+import AOS from "@/components/Wrappers/AOS";
 
 const myFont = localFont({ src: "./fonts/pnm.woff2" });
 
@@ -44,13 +45,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${myFont.className} antialiased`}>
-        {/* <MenuSlideWrapper> */}
+        <AOS />
+        <NextTopLoader showSpinner={false} color="#FBD973" />
         <SmoothScroll>
           <Header />
           {children}
           <Footer />
         </SmoothScroll>
-        {/* </MenuSlideWrapper> */}
       </body>
     </html>
   );

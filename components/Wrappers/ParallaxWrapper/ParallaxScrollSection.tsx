@@ -27,7 +27,7 @@ const ParallaxScrollSection = () => {
     // GSAP animation for darkening effect
     gsap.fromTo(
       ".parallax-overlay",
-      { opacity: 0 },
+      { opacity: 1 },
       {
         opacity: 1,
         ease: "none",

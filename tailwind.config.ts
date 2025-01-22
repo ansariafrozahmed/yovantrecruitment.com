@@ -9,7 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkGolden: "#BD842F",
+        darkGolden: "#99600b",
+        mid: "#ccac4b",
         lightGolden: "#FBD973",
       },
     },

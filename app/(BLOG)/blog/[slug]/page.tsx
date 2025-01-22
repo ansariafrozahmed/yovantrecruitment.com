@@ -2,12 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import "../../../../css/Blogstyle.css";
+import { defaultDescription, defaultTitle } from "@/lib/Constants";
 
 interface BlogData {
   title?: string;
   slug?: string;
-  meta_title?: string;
-  meta_description?: string;
   excerpt?: string;
   content?: string;
   featured_image?: string;
@@ -35,6 +34,73 @@ const getBlogDetail = async (slug: string) => {
     return {};
   }
 };
+
+export async function generateMetadata({ params }: any) {
+  const blog_slug = (await params).slug;
+  try {
+    const data = await getBlogDetail(blog_slug);
+
+    return {
+      title: data.title || defaultTitle,
+      description: data.excerpt || defaultDescription,
+      openGraph: {
+        title: data.title || defaultTitle,
+        description: data.excerpt || defaultDescription,
+        url: `${process.env.FRONTEND}/blog/${data.slug}`,
+        type: "website",
+        images: [
+          {
+            url:
+              data.featured_image || `${process.env.FRONTEND}/opengraph.webp`,
+            width: 1200,
+            height: 630,
+            alt: data.title || defaultTitle,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: data.title || defaultTitle,
+        description: data.excerpt || defaultDescription,
+        images: [
+          data.featured_image || `${process.env.FRONTEND}/opengraph.webp`,
+        ],
+      },
+      alternates: {
+        canonical: `${process.env.FRONTEND}/blog/${data.slug}`,
+      },
+    };
+  } catch (error) {
+    console.error("Error generating metadata:", error);
+    return {
+      title: defaultTitle,
+      description: defaultDescription,
+      openGraph: {
+        title: defaultTitle,
+        description: defaultDescription,
+        url: `${process.env.FRONTEND}/blog/${params.blog_slug}`,
+        type: "website",
+        images: [
+          {
+            url: `${process.env.FRONTEND}/opengraph.webp`,
+            width: 1200,
+            height: 630,
+            alt: defaultTitle,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: defaultTitle,
+        description: defaultDescription,
+        images: [`${process.env.FRONTEND}/opengraph.webp`],
+      },
+      alternates: {
+        canonical: `${process.env.FRONTEND}/blog/${params.blog_slug}`,
+      },
+    };
+  }
+}
 
 const Blogdetailpage = async ({ params }: any) => {
   const blog_slug = (await params).slug;

@@ -13,7 +13,7 @@ interface Props {
 const CatCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
-      href={"/category/catrgory_name"}
+      href={`/category/${data.slug}`}
       className="block relative group w-[300px] h-auto space-y-3"
     >
       <div className="relative h-auto w-full">

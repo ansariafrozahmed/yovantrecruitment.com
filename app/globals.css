@@ -7,11 +7,14 @@
 }
 
 .gradientHeading {
-  @apply bg-gradient-to-r w-full bg-clip-text text-transparent inline-block from-darkGolden to-lightGolden;
+  @apply bg-gradient-to-br w-full bg-clip-text text-transparent inline-block from-darkGolden via-mid to-lightGolden;
 }
-
+* {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #000;
+  color: #fff;
 }
 
 /* width */

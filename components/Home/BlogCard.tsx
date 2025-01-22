@@ -18,7 +18,7 @@ const BlogCard: React.FC<BlogCard> = ({ data }) => {
       href={`/blog/${data.slug}`}
       className="block cursor-pointer space-y-3 group "
     >
-      <div className="aspect-[4/2.5] mb-1 rounded overflow-hidden">
+      <div className="aspect-[4/2.5] mb-1  overflow-hidden">
         <Image
           src={
             data.featured_image ||
@@ -31,13 +31,13 @@ const BlogCard: React.FC<BlogCard> = ({ data }) => {
           sizes="(min-width: 1280px) 400px, (min-width: 1040px) 304px, (min-width: 780px) 348px, (min-width: 460px) 400px, 88.57vw"
         />
       </div>
-      <h2 className="text-lg gradientHeading group-hover:text-lightGolden leading-snug transition-all ease uppercase font-medium tracking-wider">
+      <h2 className="text-xl  line-clamp-1 text-lightGolden leading-tight transition-all ease capitalize font-medium tracking-wider">
         {data?.title}
       </h2>
       <h3 className="tracking-wider text-gray-300 text-[0.8rem] leading-snug line-clamp-3">
         {data.excerpt}
       </h3>
-      <span className="gradientHeading group-hover:text-lightGolden text-[0.8rem] tracking-wider">
+      <span className="text-lightGolden text-[0.8rem] block tracking-wider">
         Updated on {new Date(data.published_date).toLocaleDateString("en-GB")}
       </span>
     </Link>

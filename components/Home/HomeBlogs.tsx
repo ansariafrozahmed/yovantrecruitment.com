@@ -20,7 +20,7 @@ const HomeBlogs: React.FC = async () => {
   return (
     <div className="templateContainer space-y-6 py-8 lg:py-16">
       <h2 className="text-[1.6rem] gradientHeading text-center lg:text-4xl font-medium tracking-wide uppercase">
-        NEWS & ARTICLES
+        News & Articles
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {data?.map((item: any, i: number) => (

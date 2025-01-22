@@ -6,13 +6,14 @@ import OurClients from "@/components/Home/OurClients";
 import RequirementProcess from "@/components/Home/RequirementProcess/RequirementProcess";
 import ParallaxScrollSection from "@/components/Wrappers/ParallaxWrapper/ParallaxScrollSection";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Home = () => {
   return (
     <>
       <ParallaxScrollSection />
-      <div className="h-[80vh] md:h-[70vh] lg:h-[100vh] w-[100%] overflow-hidden parallax-section relative flex items-start">
+      <div className="h-[80vh]  md:h-[70vh] lg:h-[100vh] w-[100%] overflow-hidden parallax-section relative flex items-start">
         <div className={`relative h-full min-w-full`}>
           <Image
             src="/assets/largeImages/banner01.webp"
@@ -29,18 +30,19 @@ const Home = () => {
               <h1 className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.7rem] tracking-wider leading-tight uppercase">
                 Your Premier Partner <br /> for Exceptional Talent
               </h1>
-              <button className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black">
-                Explore jobs
-              </button>
+              <Link href={"/job"} className="block">
+                <button className="hover:opacity-90 bg-gradient-to-r tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black">
+                  Explore jobs
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute   inset-0 bg-black transition-opacity duration-100 parallax-overlay"></div>
+      {/* <div className="absolute inset-0 bg-black transition-opacity duration-100 parallax-overlay"></div> */}
       <div className="relative py-10 lg:py-16 bg-black">
         <Introduction />
       </div>
-      <OurClients />
       {/* FOR DESKTOP */}
       <div className="hidden lg:block" key={1}>
         <Categories />
@@ -49,7 +51,8 @@ const Home = () => {
       <div className="lg:hidden relative">
         <MobileCat />
       </div>
-      <RequirementProcess />
+      <OurClients />
+      {/* <RequirementProcess /> */}
       <HomeBlogs />
       {/* <WhyChoose /> */}
     </>
