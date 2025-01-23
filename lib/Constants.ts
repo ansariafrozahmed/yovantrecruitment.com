@@ -16,10 +16,10 @@ export const menu = [
   },
   {
     label: "Categories We Provide",
-    url: "/",
+    url: "/category",
   },
   {
-    label: "Our Recruitment Process",
+    label: "Bulk Recruitment Process",
     url: "/",
   },
   {
@@ -29,7 +29,7 @@ export const menu = [
 
   {
     label: "Our Clients",
-    url: "/",
+    url: "/our-clients",
   },
   {
     label: "Contact Us",
@@ -41,10 +41,10 @@ export const menu = [
   },
   {
     label: "Gallery",
-    url: "/",
+    url: "/gallery",
   },
   {
     label: "Blogs",
-    url: "/",
+    url: "/blog",
   },
 ];

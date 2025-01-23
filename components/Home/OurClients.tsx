@@ -6,11 +6,17 @@ const OurClients = () => {
   return (
     <div className="templateContainer text-center py-8 lg:py-14 space-y-10 text-white">
       <div className="space-y-3">
-        <h2 className="text-center gradientHeading text-xl lg:text-3xl tracking-wide">
+        <h2
+          data-aos="fade-up"
+          className="text-center gradientHeading text-xl lg:text-3xl tracking-wide"
+        >
           CLIENTS WE ARE PROUD OF
         </h2>
         <div className="flex items-center justify-center">
-          <p className="lg:max-w-[40rem] text-center font-normal text-white text-sm tracking-wider">
+          <p
+            data-aos="fade-up"
+            className="lg:max-w-[40rem] text-center font-normal text-white text-sm tracking-wider"
+          >
             Whether you need support or want to learn more, we're here to assist
             you Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Debitis, quos!
@@ -22,6 +28,7 @@ const OurClients = () => {
           .fill(8)
           .map((_, i) => (
             <div
+              data-aos="fade-up"
               key={i}
               className="aspect-[5/3] lg:aspect-[5/2.5] -md p-3 bg-white flex items-center justify-center"
             >
@@ -37,7 +44,10 @@ const OurClients = () => {
             </div>
           ))}
       </div>
-      <button className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black">
+      <button
+        data-aos="fade-up"
+        className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
+      >
         View all
       </button>
     </div>

@@ -45,24 +45,26 @@ const Header = () => {
 
   const renderHam = () => {
     return (
-      <div onClick={() => setOpen(!open)} className="text-white relative">
+      <div onClick={() => setOpen(!open)} className="text-white group relative">
         <div className="flex items-center gap-2 cursor-pointer transition-all ease-in-out duration-1000">
           <div className="flex flex-col items-center mb-[1px] gap-[5px] transition-all ease-in-out duration-1000">
             <span
               className={`block h-[2px] w-5 transition-transform duration-1000 ease-in-out ${
-                open ? "rotate-45 translate-y-[6px] bg-lightGolden" : "bg-white"
+                open
+                  ? "rotate-45 translate-y-[6px] bg-lightGolden"
+                  : "bg-white group-hover:bg-lightGolden"
               }`}
             ></span>
             <span
               className={`block h-[2px] w-5 transition-opacity duration-1000 ease-in-out ${
-                open ? "opacity-0" : "bg-white"
+                open ? "opacity-0" : "bg-white group-hover:bg-lightGolden"
               }`}
             ></span>
             <span
               className={`block h-[2px] w-5 transition-transform duration-1000 ease-in-out ${
                 open
                   ? "-rotate-45 -translate-y-[6px] bg-lightGolden"
-                  : "bg-white"
+                  : "bg-white group-hover:bg-lightGolden"
               }`}
             ></span>
           </div>
@@ -76,7 +78,7 @@ const Header = () => {
       <div className="text-white flex items-center gap-5 text-[0.7rem] lg:text-[0.8rem]  uppercase tracking-wider lg:tracking-widest">
         <Link href={"/about"}>
           <span
-            className={`transition-opacity ease-in-out duration-1000 hover-class ${
+            className={`transition-opacity ease-in-out font-semibold duration-1000 hover-class ${
               open ? "opacity-0" : "text-white"
             }`}
           >
@@ -85,7 +87,7 @@ const Header = () => {
         </Link>
         <Link href={"/job"}>
           <span
-            className={`transition-opacity ease-in-out duration-1000 hover-class ${
+            className={`transition-opacity ease-in-out font-semibold duration-1000 hover-class ${
               open ? "opacity-0" : "text-white"
             }`}
           >

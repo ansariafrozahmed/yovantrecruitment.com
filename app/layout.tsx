@@ -44,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${myFont.className} antialiased`}>
+      <body className={` antialiased`}>
         <AOS />
         <NextTopLoader showSpinner={false} color="#FBD973" />
         <SmoothScroll>

@@ -1,7 +1,6 @@
 import CategoryForm from "@/components/Forms/CategoryForm";
 import { categories } from "@/lib/Categories";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Categorydetail = async ({ params }: any) => {
@@ -12,7 +11,7 @@ const Categorydetail = async ({ params }: any) => {
   });
 
   return (
-    <div className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-darkGolden/25 to-black pb-6 pt-24">
+    <div className="radialGradient pb-6 pt-24">
       <div className="templateContainer">
         <div className=" space-y-4 lg:space-y-5 py-12 lg:py-16 flex flex-col items-center justify-center">
           <h2 className="gradientHeading uppercase text-[2rem] lg:text-[3rem] leading-tight tracking-wider font-semibold text-center">

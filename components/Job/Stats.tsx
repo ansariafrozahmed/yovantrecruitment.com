@@ -7,13 +7,19 @@ const Stats = () => {
         .fill(3)
         .map((_, i) => (
           <div key={i} className="text-center p-5 space-y-3">
-            <span className="text-5xl tracking-wider gradientHeading font-semibold">
+            <span
+              data-aos="fade-up"
+              className="text-5xl tracking-wider gradientHeading font-semibold"
+            >
               91%
             </span>
-            <h2 className="gradientHeading text-xl uppercase tracking-wider font-semibold">
+            <h2
+              data-aos="fade-up"
+              className="gradientHeading text-xl uppercase tracking-wider font-semibold"
+            >
               Skills Aligned
             </h2>
-            <p className="text-sm tracking-wider">
+            <p data-aos="fade-up" className="text-sm tracking-wider">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
               ipsum
             </p>

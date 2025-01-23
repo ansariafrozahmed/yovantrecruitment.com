@@ -24,11 +24,17 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({
     >
       <div className="absolute inset-0 bg-black/70"></div>
       <div className="text-center templateContainer py-28 relative  text-white space-y-2">
-        <h1 className="text-2xl lg:text-3xl tracking-wider gradientHeading font-semibold uppercase">
+        <h1
+          data-aos="fade-up"
+          className="text-2xl lg:text-3xl tracking-wider gradientHeading font-semibold uppercase"
+        >
           {heading}
         </h1>
         {breadCrumb && (
-          <ul className="flex flex-wrap text-sm items-center gap-1.5 justify-center font-medium text-white">
+          <ul
+            data-aos="fade-up"
+            className="flex flex-wrap text-sm items-center gap-1.5 justify-center font-medium text-white"
+          >
             {breadCrumb.map((item, index) => (
               <li
                 key={index}

@@ -13,7 +13,10 @@ interface Props {
 const MobileCategoryCard: React.FC<Props> = ({ data }) => {
   return (
     <Link href={`/category/${data.slug}`}>
-      <div className="aspect-[4/5.7] rounded overflow-hidden relative">
+      <div
+        data-aos="fade-up"
+        className="aspect-[4/5.7] group rounded overflow-hidden relative"
+      >
         <Image
           src={
             data.image ||

@@ -1,20 +1,33 @@
 import { Bookmark, MapIcon, MapPinIcon } from "lucide-react";
 import React from "react";
 
-const JobCards = () => {
+interface Props {
+  data: {
+    title: string;
+  };
+}
+
+const JobCards: React.FC<Props> = ({ data }) => {
   return (
-    <div className="p-2 rounded-xl group bg-[#14140c] hover:bg-gradient-to-r transition-all ease-in-out duration-300 from-mid to-lightGolden">
+    <div
+      data-aos="fade"
+      className="p-2 rounded-xl group bg-[#14140c] hover:bg-gradient-to-r transition-all ease-in-out duration-300 from-darkGolden via-mid to-lightGolden"
+    >
       <div className="bg-black rounded-md p-5 space-y-4">
-        <div className="flex items-center justify-between">
-          <h2 className="text-lightGolden  text-lg tracking-wider">
-            Sagar Tech
-          </h2>
-          <div className="border p-2 border-gray-500 rounded-full">
-            <Bookmark size={18} strokeWidth={1} />
+        <div className="">
+          <div className="space-y-1">
+            <h2 className="text-white  text-2xl tracking-wider">
+              {data?.title}
+            </h2>
+            <h2 className="text-sm text-lightGolden tracking-wider">
+              Product Designer
+            </h2>
           </div>
+          {/* <div className="border p-2 border-gray-500 rounded-full">
+            <Bookmark size={18} strokeWidth={1} />
+          </div> */}
         </div>
         <div className="h-[1px] w-full bg-[#14140c]" />
-        <h2 className="text-lg tracking-wider">Product Designer</h2>
         <div className="grid grid-cols-2 gap-2">
           <div className="flex items-center gap-1 py-1">
             <div className="h-4 w-4">

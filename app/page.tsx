@@ -13,25 +13,48 @@ const Home = () => {
   return (
     <>
       <ParallaxScrollSection />
-      <div className="h-[80vh]  md:h-[70vh] lg:h-[100vh] w-[100%] overflow-hidden parallax-section relative flex items-start">
+      <div className="h-[100svh]  md:h-[70vh] lg:h-[100vh] w-[100%] overflow-hidden parallax-section relative flex items-start">
         <div className={`relative h-full min-w-full`}>
-          <Image
+          <video
+            className=" h-full w-full object-cover object-center"
+            playsInline
+            preload="none"
+            loop
+            autoPlay
+            muted
+          >
+            <source src={"assets/video/largee.mp4"} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          {/* <Image
             src="/assets/largeImages/banner01.webp"
             alt="Banner"
             className="h-full w-screen object-cover"
             sizes="100vw"
             height={2000}
             width={3000}
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black lg:via-transparent to-transparent"></div>
-          <div className="absolute inset-0 templateContainer flex items-end pb-16">
-            <div className="space-y-3 text-white">
-              <span className="tracking-wider">Lorem ipsum dolor sit.</span>
-              <h1 className="text-[1.5rem] md:text-[2.2rem] lg:text-[2.7rem] tracking-wider leading-tight uppercase">
+          /> */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 templateContainer flex items-end pb-10 lg:pb-16">
+            <div className="space-y-4 text-white">
+              <span
+                // data-aos="fade-down"
+                className="block tracking-wider text-xs lg:text-sm uppercase font-medium"
+              >
+                Lorem ipsum dolor sit.
+              </span>
+              <h1
+                // data-aos="fade-down"
+                className="text-[2.2rem] font-medium md:text-[2.2rem]  lg:text-[2.8rem] tracking-wide leading-tight uppercase"
+              >
                 Your Premier Partner <br /> for Exceptional Talent
               </h1>
               <Link href={"/job"} className="block">
-                <button className="hover:opacity-90 bg-gradient-to-r tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black">
+                <button
+                  // data-aos="fade-up"
+                  className="hover:opacity-90 bg-gradient-to-r tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
+                >
                   Explore jobs
                 </button>
               </Link>

@@ -13,6 +13,7 @@ interface Props {
 const CatCard: React.FC<Props> = ({ data }) => {
   return (
     <Link
+      data-aos="fade-up"
       href={`/category/${data.slug}`}
       className="block relative group w-[300px] h-auto space-y-3"
     >

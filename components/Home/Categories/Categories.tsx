@@ -36,7 +36,10 @@ const Categories: React.FC = () => {
     <div ref={sectionRef} className="bg-black w-full templateContainer">
       <div className=" h-screen w-full flex flex-col gap-8 items-center justify-center overflow-hidden">
         {/* Section Title */}
-        <h2 className="text-[1.6rem] gradientHeading text-center lg:text-4xl font-medium tracking-wide uppercase">
+        <h2
+          data-aos="fade-up"
+          className="text-[1.6rem] gradientHeading text-center lg:text-4xl font-medium tracking-wide uppercase"
+        >
           Categories We Offer
         </h2>
 

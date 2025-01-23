@@ -114,10 +114,16 @@ const Introduction = () => {
         </div>
       </div>
       <div className="w-full lg:w-[60%] lg:sticky top-0 lg:h-screen flex flex-col items-start justify-center space-y-4 lg:space-y-5 text-[#242424]">
-        <h2 className="gradientHeading text-4xl tracking-wider uppercase ">
+        <h2
+          data-aos="fade-up"
+          className="gradientHeading text-4xl tracking-wider uppercase "
+        >
           Introduction
         </h2>
-        <p className="tracking-wider text-gray-300 text-[0.9rem]  leading-[25px]">
+        <p
+          data-aos="fade-up"
+          className="tracking-wider text-gray-300 text-[0.9rem]  leading-[25px]"
+        >
           Welcome to Yovant Recruitment Services, a dynamic recruitment agency
           founded by Alex Farrow and Jayson Thankappan. With extensive
           backgrounds in overseas recruitment and specialising within
@@ -125,19 +131,28 @@ const Introduction = () => {
           UAE, Alex and Jayson have built a reputation for delivering
           exceptional talent solutions.
         </p>
-        <p className="tracking-wider text-gray-300 text-[0.9rem] leading-[25px]">
+        <p
+          data-aos="fade-up"
+          className="tracking-wider text-gray-300 text-[0.9rem] leading-[25px]"
+        >
           Yovant owns its own recruitment agency in Nepal, operating under the
           same name and brand as our UAE and KSA licences. This office, led by
           our partner Rythm Chhetri and supported by a passionate team of 20
           professionals ensures streamlined operations and a dedicated local
           presence and boasts its own hospitality training centre.
         </p>
-        <p className="tracking-wider text-gray-300 text-[0.9rem] leading-[25px]">
+        <p
+          data-aos="fade-up"
+          className="tracking-wider text-gray-300 text-[0.9rem] leading-[25px]"
+        >
           In addition, we have partnered with trusted agencies the Philippines,
           India, Pakistan, Bangladesh and Africa, enabling us to source top-tier
           overseas talent tailored to the unique demands of the KSA market.
         </p>
-        <button className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black">
+        <button
+          data-aos="fade-up"
+          className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
+        >
           About us
         </button>
       </div>

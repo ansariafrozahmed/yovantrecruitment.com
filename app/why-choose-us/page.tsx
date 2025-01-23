@@ -59,7 +59,10 @@ const Whychooseus = () => {
       <div className="">
         <div className="templateContainer space-y-16 pt-32 pb-12 tracking-wide">
           <div className="max-w-[900px] w-full h-full">
-            <h1 className="lg:text-7xl text-3xl gradientHeading">
+            <h1
+              data-aos="fade-down"
+              className="lg:text-7xl text-3xl gradientHeading"
+            >
               Everything you need to get the attention of your audience
             </h1>
             {/* <div className="flex max-sm:flex-col gap-5 lg:mt-28 mt-10">
@@ -78,6 +81,7 @@ const Whychooseus = () => {
             {cards.map((card, index) => (
               <>
                 <div
+                  data-aos="fade-up"
                   key={index}
                   className="px-4 py-8 w-full bg-[#14140c] h-full rounded-xl space-y-4"
                 >

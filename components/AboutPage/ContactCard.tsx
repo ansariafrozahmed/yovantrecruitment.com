@@ -10,7 +10,10 @@ interface Props {
 
 const ContactCard: React.FC<Props> = ({ item }) => {
   return (
-    <div className="bg-[#14140c] flex items-center gap-5 p-6 rounded-xl text-white">
+    <div
+      data-aos="fade-up"
+      className="bg-[#14140c] flex items-center gap-5 p-6 rounded-xl text-white"
+    >
       <div>
         <div className="bg-gradient-to-r from-darkGolden to-lightGolden p-3 rounded-lg">
           <item.icon size={30} strokeWidth={1.5} className="text-black" />

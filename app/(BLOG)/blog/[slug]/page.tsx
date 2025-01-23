@@ -108,7 +108,10 @@ const Blogdetailpage = async ({ params }: any) => {
 
   return (
     <div className="templateContainer mt-28 text-white py-4 md:py-8 lg:py-12 space-y-8">
-      <ul className="flex flex-wrap items-center gap-1 justify-start text-sm text-gray-300">
+      <ul
+        data-aos="fade-up"
+        className="flex flex-wrap items-center gap-1 justify-start text-sm text-gray-300"
+      >
         <li>
           <Link href={"/"}>Home</Link>
         </li>
@@ -151,31 +154,40 @@ const Blogdetailpage = async ({ params }: any) => {
       </ul>
       {/* ----------- */}
       <div className="space-y-5">
-        <h1 className="text-2xl gradientHeading md:text-4xl font-medium tracking-wide uppercase ">
+        <h1
+          data-aos="fade-up"
+          className="text-2xl gradientHeading md:text-4xl font-medium tracking-wide uppercase "
+        >
           {data?.title ?? "Title Not Available"}
         </h1>
-        <div className="flex text-sm font-semibold items-center gap-1">
+        <div
+          data-aos="fade-up"
+          className="flex text-sm font-semibold items-center gap-1"
+        >
           <p>Published on </p>
           <p className="text-lightGolden tracking-wider">
             {new Date(data?.published_date).toLocaleDateString("en-GB")}
           </p>
         </div>
-        <p className="tracking-wide">
+        <p data-aos="fade-up" className="tracking-wide">
           {data?.excerpt ?? "Excerpt Not Available"}
         </p>
-        {data?.featured_image ? (
-          <Image
-            src={data.featured_image}
-            alt={data.title || "Featured Image"}
-            height={400}
-            width={600}
-            className="h-full w-full"
-            sizes="100vw"
-          />
-        ) : (
-          <p>No Image Available</p>
-        )}
+        <div data-aos="fade-up">
+          {data?.featured_image ? (
+            <Image
+              src={data.featured_image}
+              alt={data.title || "Featured Image"}
+              height={400}
+              width={600}
+              className="h-full w-full"
+              sizes="100vw"
+            />
+          ) : (
+            <p>No Image Available</p>
+          )}
+        </div>
         <div
+          data-aos="fade-up"
           dangerouslySetInnerHTML={{
             __html: data?.content ?? "<p>No Content Available</p>",
           }}
