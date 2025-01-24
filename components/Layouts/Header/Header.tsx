@@ -137,7 +137,7 @@ const Header = () => {
           open ? "translate-x-0" : "translate-x-[300px]"
         }`}
       >
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           {menu.map((item, index) => (
             <Link
               onClick={() => setOpen(!open)}

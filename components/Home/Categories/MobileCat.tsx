@@ -11,7 +11,7 @@ const MobileCat = () => {
       >
         Categories We Offer
       </h2>
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
         {categories.map((item, index) => (
           <MobileCategoryCard data={item} key={index} />
         ))}

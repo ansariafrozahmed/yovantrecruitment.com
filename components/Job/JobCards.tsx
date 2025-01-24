@@ -1,5 +1,7 @@
 import { Bookmark, MapIcon, MapPinIcon } from "lucide-react";
+import Link from "next/link";
 import React from "react";
+import Apply from "./Apply";
 
 interface Props {
   data: {
@@ -56,11 +58,9 @@ const JobCards: React.FC<Props> = ({ data }) => {
         </div>
         <div className="flex items-center gap-2 justify-center">
           <button className="w-full rounded-lg bg-[#14140c] p-2 text-sm tracking-wider">
-            view details
+            <Link href={"/job/slug"}>view details</Link>
           </button>
-          <button className="w-full rounded-lg bg-gradient-to-r text-sm tracking-wider text-black from-darkGolden  to-lightGolden p-2">
-            Apply
-          </button>
+          <Apply />
         </div>
       </div>
       <div className="py-3 text-center text-sm text-gray-400 group-hover:text-black tracking-wider">

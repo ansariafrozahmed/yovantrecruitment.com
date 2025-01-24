@@ -79,7 +79,7 @@ const Introduction = () => {
   return (
     <div className="templateContainer  flex flex-col lg:flex-row gap-8 lg:gap-10">
       <div className="w-full flex flex-row items-center lg:flex-col gap-2 lg:w-[40%] relative overflow-hidden">
-        <div className="lg:h-screen w-[55%] lg:w-full lg:hidden">
+        <div className="lg:h-screen w-[55%] border-4 lg:border-none lg:w-full lg:hidden">
           <Image
             src={
               "https://images.pexels.com/photos/4344106/pexels-photo-4344106.jpeg?auto=compress&cs=tinysrgb"
@@ -101,7 +101,7 @@ const Introduction = () => {
             width={600}
           />
         </div>
-        <div className="lg:h-screen -ml-6 lg:-ml-0 border-8 lg:border-none shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] lg:shadow-none border-white w-[50%] lg:w-full relative">
+        <div className="lg:h-screen -ml-6 lg:-ml-0 border-4 lg:border-none shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] lg:shadow-none border-white w-[50%] lg:w-full relative">
           <Image
             src={
               "https://images.pexels.com/photos/5989940/pexels-photo-5989940.jpeg?auto=compress&cs=tinysrgb"
@@ -116,7 +116,7 @@ const Introduction = () => {
       <div className="w-full lg:w-[60%] lg:sticky top-0 lg:h-screen flex flex-col items-start justify-center space-y-4 lg:space-y-5 text-[#242424]">
         <h2
           data-aos="fade-up"
-          className="gradientHeading text-4xl tracking-wider uppercase "
+          className="gradientHeading text-3xl lg:text-4xl tracking-wider uppercase "
         >
           Introduction
         </h2>

@@ -10,22 +10,22 @@ export const menu = [
     label: "Why Choose Us",
     url: "/why-choose-us",
   },
-  {
-    label: "Services",
-    url: "/",
-  },
+  // {
+  //   label: "Services",
+  //   url: "/",
+  // },
   {
     label: "Categories We Provide",
     url: "/category",
   },
-  {
-    label: "Bulk Recruitment Process",
-    url: "/",
-  },
-  {
-    label: "Our Branches",
-    url: "/",
-  },
+  // {
+  //   label: "Bulk Recruitment Process",
+  //   url: "/",
+  // },
+  // {
+  //   label: "Our Branches",
+  //   url: "/",
+  // },
 
   {
     label: "Our Clients",
@@ -37,7 +37,7 @@ export const menu = [
   },
   {
     label: "FAQs",
-    url: "/",
+    url: "/faq",
   },
   {
     label: "Gallery",

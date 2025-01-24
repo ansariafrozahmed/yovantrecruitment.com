@@ -1,3 +1,4 @@
+import FAQSection from "@/components/FAQ/FAQSection";
 import Categories from "@/components/Home/Categories/Categories";
 import MobileCat from "@/components/Home/Categories/MobileCat";
 import HomeBlogs from "@/components/Home/HomeBlogs";
@@ -34,8 +35,8 @@ const Home = () => {
             height={2000}
             width={3000}
           /> */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
           <div className="absolute inset-0 templateContainer flex items-end pb-10 lg:pb-16">
             <div className="space-y-4 text-white">
               <span
@@ -75,6 +76,7 @@ const Home = () => {
         <MobileCat />
       </div>
       <OurClients />
+      {/* <FAQSection /> */}
       {/* <RequirementProcess /> */}
       <HomeBlogs />
       {/* <WhyChoose /> */}

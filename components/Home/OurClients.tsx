@@ -1,5 +1,6 @@
 import { SquareArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const OurClients = () => {
@@ -33,13 +34,11 @@ const OurClients = () => {
               className="aspect-[5/3] lg:aspect-[5/2.5] -md p-3 bg-white flex items-center justify-center"
             >
               <Image
-                src={
-                  "https://www.alfarisgroup.com/wp-content/uploads/2018/05/logo-bigger.png"
-                }
+                src={`/assets/clients/${i + 1}.png`}
                 alt=""
                 className="w-full h-full object-contain"
-                height={100}
-                width={200}
+                height={200}
+                width={400}
               />
             </div>
           ))}
@@ -48,7 +47,7 @@ const OurClients = () => {
         data-aos="fade-up"
         className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
       >
-        View all
+        <Link href={"/our-clients"}>View all</Link>
       </button>
     </div>
   );
