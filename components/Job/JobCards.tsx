@@ -1,4 +1,12 @@
-import { Bookmark, MapIcon, MapPinIcon } from "lucide-react";
+import {
+  Bookmark,
+  Clock,
+  Cpu,
+  DollarSign,
+  Hotel,
+  MapIcon,
+  MapPinIcon,
+} from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import Apply from "./Apply";
@@ -18,12 +26,16 @@ const JobCards: React.FC<Props> = ({ data }) => {
       <div className="bg-black rounded-md p-5 space-y-4">
         <div className="">
           <div className="space-y-1">
-            <h2 className="text-white  text-2xl tracking-wider">
-              {data?.title}
-            </h2>
-            <h2 className="text-sm text-lightGolden tracking-wider">
-              Product Designer
-            </h2>
+            <Link href={"/job/slug"}>
+              <h2 className="text-white  text-2xl tracking-wider">
+                {data?.title}
+              </h2>
+            </Link>
+            <Link href={"/job/slug"}>
+              <h2 className="text-sm text-lightGolden tracking-wider">
+                Product Designer
+              </h2>
+            </Link>
           </div>
           {/* <div className="border p-2 border-gray-500 rounded-full">
             <Bookmark size={18} strokeWidth={1} />
@@ -39,26 +51,26 @@ const JobCards: React.FC<Props> = ({ data }) => {
           </div>
           <div className="flex items-center gap-1 py-1">
             <div className="h-4 w-4">
-              <MapPinIcon className="text-lightGolden h-full w-full" />
+              <Clock className="text-lightGolden h-full w-full" />
             </div>
-            <span className="text-sm tracking-wide">Jakarta, Indonesia</span>
+            <span className="text-sm tracking-wide">Full Time</span>
           </div>
           <div className="flex items-center gap-1 py-1">
             <div className="h-4 w-4">
-              <MapPinIcon className="text-lightGolden h-full w-full" />
+              <Cpu className="text-lightGolden h-full w-full" />
             </div>
-            <span className="text-sm tracking-wide">Jakarta, Indonesia</span>
+            <span className="text-sm tracking-wide">Technology</span>
           </div>
           <div className="flex items-center gap-1 py-1">
             <div className="h-4 w-4">
-              <MapPinIcon className="text-lightGolden h-full w-full" />
+              <DollarSign className="text-lightGolden h-full w-full" />
             </div>
-            <span className="text-sm tracking-wide">Jakarta, Indonesia</span>
+            <span className="text-sm tracking-wide">$400/monthly</span>
           </div>
         </div>
         <div className="flex items-center gap-2 justify-center">
           <button className="w-full rounded-lg bg-[#14140c] p-2 text-sm tracking-wider">
-            <Link href={"/job/slug"}>view details</Link>
+            <Link href={"/job/slug"}>View details</Link>
           </button>
           <Apply />
         </div>

@@ -33,8 +33,9 @@ const OurFounder = () => {
         </h2>
         <div data-aos="fade-up" className="flex items-center justify-center">
           <p className="lg:max-w-[40rem] text-center font-normal text-white text-sm tracking-wider">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus
-            fugiat expedita non quasi, hic consequuntur? lorem
+            Their vision for connecting exceptional talent with global
+            opportunities has shaped Yovant into a trusted leader in the
+            hospitality, facilities management, and construction sectors.
           </p>
         </div>
       </div>

@@ -92,18 +92,18 @@ const FAQsection = () => {
     },
   ];
   return (
-    <div className="py-6">
+    <div className="">
       <div className="space-y-4">
         {faqsData.map((faq, index) => (
           <div key={index} className="text-white">
             {/* Question */}
             <button
-              className={`w-full flex justify-between items-center px-4 py-6 text-left bg-[#14140c] font-medium text-white hover:bg-[#1f1f12] focus:outline-none ${
+              className={`w-full flex justify-between items-center px-4 py-6 text-left bg-[#14140c] tracking-wider text-white hover:bg-[#1f1f12] focus:outline-none ${
                 openItem === faq.question ? "bg-[#1f1f12]" : "bg-[#14140c]"
               }`}
               onClick={() => handleToggle(faq.question)}
             >
-              <span>{faq.question}</span>
+              <span className="font-medium">{faq.question}</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`w-5 h-5 transform transition-transform duration-500 ${
@@ -131,7 +131,9 @@ const FAQsection = () => {
                 maxHeight: openItem === faq.question ? "1000px" : "0px",
               }}
             >
-              <div className="p-4 text-gray-400">{faq.answer}</div>
+              <div className="p-4 text-gray-400 tracking-wide">
+                {faq.answer}
+              </div>
             </div>
           </div>
         ))}

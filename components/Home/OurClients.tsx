@@ -18,9 +18,9 @@ const OurClients = () => {
             data-aos="fade-up"
             className="lg:max-w-[40rem] text-center font-normal text-white text-sm tracking-wider"
           >
-            Whether you need support or want to learn more, we're here to assist
-            you Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Debitis, quos!
+            Our clients trust us to deliver exceptional talent that drives
+            success across industries, and we take pride in every partnership we
+            build.
           </p>
         </div>
       </div>

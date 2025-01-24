@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const CTA = () => {
@@ -18,12 +19,14 @@ const CTA = () => {
             Whether you need support or want to learn more, we're here to assist
             you
           </p>
-          <button
-            data-aos="fade-up"
-            className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
-          >
-            Contact Now
-          </button>
+          <Link className="block" href={"/contact"}>
+            <button
+              data-aos="fade-up"
+              className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
+            >
+              Contact Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

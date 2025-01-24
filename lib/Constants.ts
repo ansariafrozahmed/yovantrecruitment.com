@@ -7,6 +7,14 @@ export const menu = [
   //     url: "/",
   //   },
   {
+    label: "About Us",
+    url: "/about",
+  },
+  {
+    label: "Jobs",
+    url: "/job",
+  },
+  {
     label: "Why Choose Us",
     url: "/why-choose-us",
   },

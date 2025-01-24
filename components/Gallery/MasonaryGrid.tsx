@@ -8,7 +8,7 @@ const MasonaryGrid = () => {
           <img
             data-aos="fade-up"
             className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>

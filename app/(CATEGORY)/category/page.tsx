@@ -8,9 +8,7 @@ const Category = () => {
     <div className="radialGradient">
       <NewBreadcrumb
         heading="Our Categories"
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-            dolore incidunt illum at sint cupiditate dignissimos reiciendis
-            ullam laudantium et."
+        text="At Yovant Recruitment Service, we specialize in recruiting top talent across various industries. From healthcare to engineering, we offer tailored solutions to meet the diverse needs of our clients, ensuring the right fit for every role."
       />
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 templateContainer gap-3 pb-8 md:pb-10 lg:pb-12">
         {categories.map((item, index) => (

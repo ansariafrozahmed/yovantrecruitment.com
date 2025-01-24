@@ -1,3 +1,5 @@
+import { categories } from "@/lib/Categories";
+import { menu } from "@/lib/Constants";
 import { Home, Mail, Map, MapIcon, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,8 +27,10 @@ const Footer = () => {
             </h2>
           </div>
           <p className="tracking-wider text-gray-300 text-[0.85rem] pr-5 leading-[25px]">
-            Welcome to Yovant Recruitment Services, a dynamic recruitment agency
-            founded by Alex Farrow and Jayson Thankappan.
+            A dynamic recruitment agency founded by Alex Farrow and Jayson
+            Thankappan. With extensive backgrounds in overseas recruitment and
+            specialising within hospitality, facilities management and
+            construction across the UK and UAE,
           </p>
         </div>
         <div className="space-y-4">
@@ -35,30 +39,15 @@ const Footer = () => {
           </h2>
           <div className="w-[100px] h-[2px] bg-gradient-to-r rounded from-darkGolden to-lightGolden"></div>
           <div className="space-y-2 md:space-y-4 text-sm font-light">
-            <Link
-              className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
-            >
-              <p>Home</p>
-            </Link>
-            <Link
-              className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
-            >
-              <p>About Us</p>
-            </Link>
-            <Link
-              className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
-            >
-              <p>Contact Us</p>
-            </Link>
-            <Link
-              className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
-            >
-              <p>Blogs</p>
-            </Link>
+            {categories.map((item, index) => (
+              <Link
+                key={index}
+                className="block hover:pl-2 transition-all ease-in-out duration-200"
+                href={item.slug}
+              >
+                <p>{item.name}</p>
+              </Link>
+            ))}
           </div>
         </div>
         <div className="space-y-4">
@@ -69,28 +58,24 @@ const Footer = () => {
           <div className="space-y-2 md:space-y-4 text-sm font-light">
             <Link
               className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
-            >
-              <p>Home</p>
-            </Link>
-            <Link
-              className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
+              href={"/about"}
             >
               <p>About Us</p>
             </Link>
             <Link
               className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
+              href={"job"}
             >
-              <p>Contact Us</p>
+              <p>Jobs</p>
             </Link>
-            <Link
-              className="block hover:pl-2 transition-all ease-in-out duration-200"
-              href={"/"}
-            >
-              <p>Blogs</p>
-            </Link>
+            {menu.map((item, index) => (
+              <Link
+                className="block hover:pl-2 transition-all ease-in-out duration-200"
+                href={item.url}
+              >
+                <p>{item.label}</p>
+              </Link>
+            ))}
           </div>
         </div>
         <div className="space-y-4">
@@ -107,18 +92,27 @@ const Footer = () => {
               <MapPin color="#FBD973" size={20} strokeWidth={1.5} />
               <p>Sharjah, Media City, Sharjah, UAE</p>
             </div>
-            <div className="flex items-center gap-2 tracking-wide ">
+            <Link
+              href={"tel:+971 5 5332 6843"}
+              className="flex items-center gap-2 tracking-wide "
+            >
               <Phone color="#FBD973" size={20} strokeWidth={1.5} />
               <p>+971 5 5332 6843</p>
-            </div>
-            <div className="flex items-center gap-2 tracking-wide ">
+            </Link>
+            <Link
+              href={"tel:+971 5 8528 8858"}
+              className="flex items-center gap-2 tracking-wide "
+            >
               <Phone color="#FBD973" size={20} strokeWidth={1.5} />
               <p>+971 5 8528 8858</p>
-            </div>
-            <div className="flex items-center gap-2 tracking-wide ">
+            </Link>
+            <Link
+              href={"mailto:info@yovantrecruitment.com"}
+              className="flex items-center gap-2 tracking-wide "
+            >
               <Mail color="#FBD973" size={20} strokeWidth={1.5} />
               <p>info@yovantrecruitment.com</p>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

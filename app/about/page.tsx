@@ -29,9 +29,7 @@ const About = () => {
     <>
       <NewBreadcrumb
         heading="About Us"
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-            dolore incidunt illum at sint cupiditate dignissimos reiciendis
-            ullam laudantium et."
+        text="We bring together the best talent and employers worldwide, fostering growth and innovation. Our dedicated team ensures a smooth recruitment process, from sourcing to onboarding, tailored to meet the unique needs of every client."
       />
       <div data-aos="fade-up" className="templateContainer  h-auto w-full">
         <Image
@@ -42,7 +40,7 @@ const About = () => {
           width={1500}
         />
       </div>
-      <div className="templateContainer space-y-2 py-8 lg:py-16">
+      {/* <div className="templateContainer space-y-2 py-8 lg:py-16">
         <h2
           data-aos="fade-up"
           className="text-center gradientHeading text-xl lg:text-3xl tracking-wide"
@@ -62,7 +60,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className="templateContainer py-8 lg:py-16 space-y-16 lg:space-y-28">
         <div className="flex flex-col lg:flex-row items-center w-full gap-10">
           <div data-aos="fade-up" className="w-full lg:w-[40%]">
@@ -86,30 +84,24 @@ const About = () => {
               className="tracking-wider text-gray-300 text-[0.87rem]  leading-[23px]"
             >
               Welcome to Yovant Recruitment Services, a dynamic recruitment
-              agency founded by Alex Farrow and Jayson Thankappan. With
-              extensive backgrounds in overseas recruitment and specialising
-              within hospitality, facilities management and construction across
-              the UK and UAE, Alex and Jayson have built a reputation for
-              delivering exceptional talent solutions.
+              agency founded by Alex Farrow and Jayson Thankappan. With years of
+              experience in overseas recruitment, Alex and Jayson have become
+              known for their expertise in the hospitality, facilities
+              management, and construction sectors across the UK and UAE. Their
+              commitment to delivering exceptional talent solutions has earned
+              them a strong reputation in the industry.
             </p>
             <p
               data-aos="fade-up"
               className="tracking-wider text-gray-300 text-[0.87rem] leading-[23px]"
             >
-              Yovant owns its own recruitment agency in Nepal, operating under
-              the same name and brand as our UAE and KSA licences. This office,
-              led by our partner Rythm Chhetri and supported by a passionate
-              team of 20 professionals ensures streamlined operations and a
-              dedicated local presence and boasts its own hospitality training
-              centre.
+              Yovant is also proud to operate a recruitment agency in Nepal,
+              under the same name and brand as our UAE and KSA licenses. This
+              office is led by our partner, Rythm Chhetri, and is supported by a
+              dedicated team of 20 professionals. We ensure smooth operations
+              and a localized presence in Nepal, which also houses our own
+              hospitality training center.
             </p>
-
-            <button
-              data-aos="fade-up"
-              className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
-            >
-              About us
-            </button>
           </div>
         </div>
         <div className="flex flex-col-reverse lg:flex-row items-center w-full gap-10">
@@ -142,13 +134,6 @@ const About = () => {
               dedicated local presence and boasts its own hospitality training
               centre.
             </p>
-
-            <button
-              data-aos="fade-up"
-              className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
-            >
-              About us
-            </button>
           </div>
           <div data-aos="fade-up" className="w-full lg:w-[40%]">
             <Image

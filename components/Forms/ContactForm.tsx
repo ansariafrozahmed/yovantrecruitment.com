@@ -112,7 +112,7 @@ const ContactForm = () => {
         <div className="mt-4">
           <button
             type="submit"
-            className="bg-black text-templateOrange flex items-center gap-2 border border-templateOrange text-xs font-medium tracking-wider py-3 px-6 transition-all duration-300 ease-in-out" // Add transition classes
+            className="bg-gradient-to-r w-full font-medium hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black" // Add transition classes
           >
             {/* Loader with transition */}
             {loading && (

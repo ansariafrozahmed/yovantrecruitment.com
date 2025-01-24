@@ -43,7 +43,7 @@ const Home = () => {
                 // data-aos="fade-down"
                 className="block tracking-wider text-xs lg:text-sm uppercase font-medium"
               >
-                Lorem ipsum dolor sit.
+                Connecting You Globally
               </span>
               <h1
                 // data-aos="fade-down"

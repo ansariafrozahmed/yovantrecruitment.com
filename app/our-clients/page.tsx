@@ -7,9 +7,7 @@ const Ourclients = () => {
     <>
       <NewBreadcrumb
         heading="Our Clients"
-        text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-            dolore incidunt illum at sint cupiditate dignissimos reiciendis
-            ullam laudantium et."
+        text="We are proud to partner with leading businesses and organizations across the globe. Our clients trust us to deliver exceptional talent that drives success and innovation."
       />
       <div className="templateContainer mx-auto grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-5 pb-10 lg:pb-16">
         {Array(30)
