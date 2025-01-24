@@ -76,3 +76,12 @@ body {
   pointer-events: auto;
   padding: 20px 24px;
 }
+.my-masonry-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.my-masonry-grid_column {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

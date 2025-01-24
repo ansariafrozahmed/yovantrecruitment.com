@@ -7,7 +7,7 @@ const MasonaryGrid = () => {
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
             src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
@@ -15,42 +15,16 @@ const MasonaryGrid = () => {
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+            className="min-h-[150px] lg:min-h-[200px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div className="grid gap-4">
-        <div>
-          <img
-            data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
@@ -59,24 +33,24 @@ const MasonaryGrid = () => {
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+            className="min-h-[150px] lg:min-h-[200px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
@@ -85,24 +59,50 @@ const MasonaryGrid = () => {
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
         <div>
           <img
             data-aos="fade-up"
-            className="h-auto max-w-full rounded-lg"
-            src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+            className="min-h-[150px] lg:min-h-[200px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div className="grid gap-4">
+        <div>
+          <img
+            data-aos="fade-up"
+            className="min-h-[150px] lg:min-h-[200px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            data-aos="fade-up"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            data-aos="fade-up"
+            className="min-h-[250] lg:min-h-[300px] object-cover max-w-full rounded-lg"
+            src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png"
             alt=""
           />
         </div>
