@@ -20,13 +20,13 @@ const Hero = () => {
             browse & find a job if you need it
           </p>
         </div>
-        <div data-aos="fade-up" className="absolute bottom-0 z-0">
+        <div data-aos="fade-up" className="absolute w-full bottom-0 z-0">
           <Image
             height={500}
             width={1200}
             src="/assets/largeImages/wave.png"
             alt=""
-            className="opacity-15"
+            className="opacity-15 w-full"
           />
         </div>
       </div>

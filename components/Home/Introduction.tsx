@@ -54,6 +54,7 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -149,12 +150,14 @@ const Introduction = () => {
           India, Pakistan, Bangladesh and Africa, enabling us to source top-tier
           overseas talent tailored to the unique demands of the KSA market.
         </p>
-        <button
-          data-aos="fade-up"
-          className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
-        >
-          About us
-        </button>
+        <Link href={"/about"}>
+          <button
+            data-aos="fade-up"
+            className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
+          >
+            About us
+          </button>
+        </Link>
       </div>
     </div>
   );
