@@ -4,6 +4,7 @@ import { Home, Mail, Map, MapIcon, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import WhatsappFloating from "./WhatsappFloating";
 
 const Footer = () => {
   return (
@@ -70,6 +71,7 @@ const Footer = () => {
             </Link>
             {menu.map((item, index) => (
               <Link
+                key={index}
                 className="block hover:pl-2 transition-all ease-in-out duration-200"
                 href={item.url}
               >
@@ -121,6 +123,7 @@ const Footer = () => {
           © Copyright 2024 | All Rights Reserved
         </p>
       </div>
+      <WhatsappFloating />
     </div>
   );
 };

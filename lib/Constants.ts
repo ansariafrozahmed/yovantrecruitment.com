@@ -18,10 +18,20 @@ export const menu = [
     label: "Why Choose Us",
     url: "/why-choose-us",
   },
-  // {
-  //   label: "Services",
-  //   url: "/",
-  // },
+  {
+    label: "Services",
+    url: "/services",
+    subMenu: [
+      {
+        label: "On demand labour supply",
+        url: "/services/on-demand-labour-supply",
+      },
+      {
+        label: "Bulk Overseas Recruitment",
+        url: "/services/bulk-overseas-recruitment",
+      },
+    ],
+  },
   {
     label: "Categories We Provide",
     url: "/category",
