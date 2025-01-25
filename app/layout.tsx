@@ -11,10 +11,12 @@ const myFont = localFont({ src: "./fonts/pnm.woff2" });
 
 export const metadata: Metadata = {
   title: "Yovant Recruitement Services",
-  description: "",
+  description:
+    "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
   openGraph: {
     title: "Yovant Recruitement Services",
-    description: "",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
     url: `https://yovantrecruitment.com/`,
     type: "website",
     images: [
@@ -29,7 +31,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Yovant Recruitement Services",
-    description: "",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
     images: [`${process.env.FRONTEND}/assets/logo/golden.png`],
   },
   alternates: {
