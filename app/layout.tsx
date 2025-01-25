@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `/assets/logo/webp/golden.webp`,
+        url: `${process.env.FRONTEND}/assets/logo/webp/golden.webp`,
         width: 1200,
         height: 630,
         alt: "Yovant Recruitement Services",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yovant Recruitement Services",
     description: "",
-    images: [`/assets/logo/golden.png`],
+    images: [`${process.env.FRONTEND}/assets/logo/golden.png`],
   },
   alternates: {
     canonical: `https://yovantrecruitment.com/`,
