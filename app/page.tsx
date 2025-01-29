@@ -5,6 +5,7 @@ import HomeBlogs from "@/components/Home/HomeBlogs";
 import Introduction from "@/components/Home/Introduction";
 import OurClients from "@/components/Home/OurClients";
 import RequirementProcess from "@/components/Home/RequirementProcess/RequirementProcess";
+import TimelineProcess from "@/components/Layouts/Timeline/TimelineSection";
 import ParallaxScrollSection from "@/components/Wrappers/ParallaxWrapper/ParallaxScrollSection";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,9 +13,9 @@ import React from "react";
 
 const Home = () => {
   return (
-    <>
+    <div className="z-10">
       <ParallaxScrollSection />
-      <div className="h-[100svh]  md:h-[70vh] lg:h-[100vh] w-[100%] overflow-hidden parallax-section relative flex items-start">
+      <div className="h-[100svh] z-[1] md:h-[70vh] lg:h-[100vh] w-[100%] overflow-hidden parallax-section relative flex items-start">
         <div className={`relative h-full min-w-full`}>
           <video
             className=" h-full w-full object-cover object-center"
@@ -35,8 +36,8 @@ const Home = () => {
             height={2000}
             width={3000}
           /> */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-          <div className="absolute inset-0 bg-black/20"></div>
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div> */}
+          <div className="absolute inset-0 bg-black/30"></div>
           <div className="absolute inset-0 templateContainer flex items-end pb-10 lg:pb-16">
             <div className="space-y-4 text-white">
               <span
@@ -64,23 +65,24 @@ const Home = () => {
         </div>
       </div>
       {/* <div className="absolute inset-0 bg-black transition-opacity duration-100 parallax-overlay"></div> */}
-      <div className="relative py-10 lg:py-16 bg-black">
+      <div className="relative py-10 z-[1] lg:py-16 bg-black">
         <Introduction />
       </div>
       {/* FOR DESKTOP */}
-      <div className="hidden lg:block" key={1}>
+      {/* <div className="hidden z-[10] lg:block" key={1}>
         <Categories />
-      </div>
+      </div> */}
       {/* OUR CLASSES FOR MOBILE */}
-      <div className="lg:hidden relative">
+      {/* <div className="lg:hidden relative">
         <MobileCat />
-      </div>
+      </div> */}
       <OurClients />
       {/* <FAQSection /> */}
       {/* <RequirementProcess /> */}
+      {/* <TimelineProcess /> */}
       <HomeBlogs />
       {/* <WhyChoose /> */}
-    </>
+    </div>
   );
 };
 

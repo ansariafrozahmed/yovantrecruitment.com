@@ -8,7 +8,7 @@ import WhatsappFloating from "./WhatsappFloating";
 
 const Footer = () => {
   return (
-    <div className="text-white">
+    <div className="text-white bg-black relative ">
       <div className="w-full h-[1px] bg-white/10"></div>
       <div className="container m-auto px-4 md:px-4 py-6 md:py-8 lg:py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5">
         <div className="space-y-5">

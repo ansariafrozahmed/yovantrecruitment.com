@@ -5,7 +5,7 @@ import React from "react";
 
 const OurClients = () => {
   return (
-    <div className="templateContainer text-center py-8 lg:py-14 space-y-10 text-white">
+    <div className="templateContainer  text-center py-8 lg:py-14 space-y-10 text-white">
       <div className="space-y-3">
         <h2
           data-aos="fade-up"

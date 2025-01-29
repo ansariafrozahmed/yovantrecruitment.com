@@ -150,12 +150,14 @@ const Header = () => {
           </div>
           <div className="relative flex p-8  overflow-hidden flex-col gap-4">
             {menu.map((item, index) => (
-              <div className="flex group items-center justify-between">
+              <div
+                key={index}
+                className="flex group items-center justify-between"
+              >
                 <Link
                   onClick={() => setOpen(!open)}
                   className=""
                   href={item.url}
-                  key={index}
                 >
                   <span
                     className={`text-white hover-class text-[0.7rem] lg:text-[0.85rem]  uppercase tracking-wider lg:tracking-widest ${

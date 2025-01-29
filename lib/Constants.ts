@@ -40,10 +40,10 @@ export const menu = [
   //   label: "Bulk Recruitment Process",
   //   url: "/",
   // },
-  // {
-  //   label: "Our Branches",
-  //   url: "/",
-  // },
+  {
+    label: "Our Branches",
+    url: "/branches",
+  },
 
   {
     label: "Our Clients",
