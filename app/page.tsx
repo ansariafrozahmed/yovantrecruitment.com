@@ -12,8 +12,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const revalidate = 60;
-
 const Home = () => {
   return (
     <div className="z-10">
@@ -28,7 +26,7 @@ const Home = () => {
             autoPlay
             muted
           >
-            <source src={"assets/video/largee.mp4"} type="video/mp4" />
+            <source src={"/assets/video/largee.mp4"} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* <Image
@@ -79,7 +77,6 @@ const Home = () => {
       <div className="lg:hidden relative">
         <MobileCat />
       </div>
-      <RequirementProcess />
       <OurClients />
       <div className="templateContainer py-10 space-y-10">
         <div className="space-y-3">
@@ -113,6 +110,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      {/* <RequirementProcess /> */}
       {/* <TimelineProcess /> */}
       <HomeBlogs />
       {/* <WhyChoose /> */}

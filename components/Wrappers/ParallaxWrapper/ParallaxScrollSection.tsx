@@ -25,20 +25,20 @@ const ParallaxScrollSection = () => {
     );
 
     // GSAP animation for darkening effect
-    gsap.fromTo(
-      ".parallax-overlay",
-      { opacity: 1 },
-      {
-        opacity: 1,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".parallax-section",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   ".parallax-overlay",
+    //   { opacity: 1 },
+    //   {
+    //     opacity: 1,
+    //     ease: "none",
+    //     scrollTrigger: {
+    //       trigger: ".parallax-section",
+    //       start: "top top",
+    //       end: "bottom top",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
   }, []);
 
   return null;
