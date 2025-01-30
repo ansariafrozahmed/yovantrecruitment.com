@@ -53,7 +53,7 @@ const DetailBox = () => {
             ))}
         </div>
         <div className="fixed lg:relative bottom-0 left-0 bg-black p-4 w-full">
-          <Apply />
+          <Apply jobTitle="Product Designer" />
         </div>
       </div>
       {/* ------- */}

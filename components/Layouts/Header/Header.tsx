@@ -145,10 +145,10 @@ const Header = () => {
         }`}
       >
         <div className=" space-y-5">
-          <div className="flex px-8 pt-8  items-center justify-end">
+          <div className="flex px-5 pt-5  items-center justify-end">
             <X onClick={() => setOpen(!open)} className="cursor-pointer" />
           </div>
-          <div className="relative flex p-8  overflow-hidden flex-col gap-4">
+          <div className="relative flex px-8  overflow-hidden flex-col gap-4">
             {menu.map((item, index) => (
               <div
                 key={index}

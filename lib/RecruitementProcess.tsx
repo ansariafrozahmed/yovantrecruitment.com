@@ -1,6 +1,6 @@
-export const bulkRecruitementsteps = [
+export const bulkRecruitmentsteps = [
   {
-    stepNumber: "Step 01",
+    stepNumber: "01",
     title: "Obtain Detailed Candidate Specifications",
     details: [
       {
@@ -18,7 +18,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 02",
+    stepNumber: "02",
     title: "Arrange the Wakala from the KSA employer",
     details: [
       {
@@ -36,7 +36,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 03",
+    stepNumber: "03",
     title: "Launch Targeted Marketing Campaigns",
     details: [
       {
@@ -59,7 +59,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 04",
+    stepNumber: "04",
     title: "Arrange Travel and Accommodation for Talent Acquisition Team",
     details: [
       {
@@ -82,7 +82,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 05",
+    stepNumber: "05",
     title: "Arrange Documentation and Medicals",
     details: [
       {
@@ -100,7 +100,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 06",
+    stepNumber: "06",
     title: "Submission of Documentation for Wakala",
     details: [
       {
@@ -113,7 +113,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 07",
+    stepNumber: "07",
     title: "Arrange Final Travel for Candidates",
     details: [
       {
@@ -136,7 +136,7 @@ export const bulkRecruitementsteps = [
       "https://imageio.forbes.com/specials-images/imageserve/6335d236f4ddc58b72592c39//960x0.jpg",
   },
   {
-    stepNumber: "Step 08",
+    stepNumber: "08",
     title: "Final Step: Arrival and Induction",
     details: [
       {

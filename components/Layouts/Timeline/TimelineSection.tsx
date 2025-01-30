@@ -1,7 +1,7 @@
 import React from "react";
 import "./Style.css";
 import Image from "next/image";
-import { bulkRecruitementsteps } from "@/lib/RecruitementProcess";
+import { bulkRecruitmentsteps } from "@/lib/RecruitementProcess";
 
 const TimelineSection = () => {
   return (
@@ -29,11 +29,11 @@ const TimelineSection = () => {
             <div className="timeline_progress">
               <div className="timeline_progress-bar"></div>
             </div>
-            {bulkRecruitementsteps.map((step, index) => (
+            {bulkRecruitmentsteps.map((step, index) => (
               <div key={index} className="timeline_item">
                 <div className="timeline_left">
                   <h3 className="text-white text-3xl font-semibold tracking-wider timeline_date-text">
-                    {step.stepNumber}
+                    Step {step.stepNumber}
                   </h3>
                 </div>
                 <div className="timeline_centre">

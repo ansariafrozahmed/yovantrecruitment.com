@@ -1,5 +1,6 @@
 import FAQsection from "@/components/FAQ/FAQSection";
 import NewBreadcrumb from "@/components/Layouts/Breadcrumb/NewBreadcrumb";
+import { pageFaqs } from "@/lib/faqs";
 import Image from "next/image";
 import React from "react";
 
@@ -30,7 +31,7 @@ const FAQs = () => {
             {/* <h1 className="lg:text-4xl leading-none text-3xl gradientHeading">
             Frequently Asked Questions
           </h1> */}
-            <FAQsection />
+            <FAQsection data={pageFaqs} />
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ const Footer = () => {
           <div>
             <h2 className="gradientHeading text-2xl">YOVANT</h2>
             <h2 className="gradientHeading text-xl tracking-wide">
-              RECRUITEMENT SERVICES
+              RECRUITMENT SERVICES
             </h2>
           </div>
           <p className="tracking-wider text-gray-300 text-[0.85rem] pr-5 leading-[25px]">

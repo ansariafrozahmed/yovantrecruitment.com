@@ -31,7 +31,7 @@ const OurClients = () => {
             <div
               data-aos="fade-up"
               key={i}
-              className="aspect-[5/3] lg:aspect-[5/2.5] -md p-3 bg-white flex items-center justify-center"
+              className="aspect-[5/3] lg:aspect-[5/2.5] rounded-md p-3 bg-white flex items-center justify-center"
             >
               <Image
                 src={`/assets/clients/${i + 1}.png`}

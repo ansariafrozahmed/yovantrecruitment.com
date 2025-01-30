@@ -8,7 +8,7 @@ const ServicePage = () => {
     {
       name: "On Demand Labour Supply",
       url: "/services/on-demand-labour-supply",
-      image: "/assets/services/labour.jpg",
+      image: "/assets/services/438.webp",
     },
     {
       name: "Bulk Overseas Recruitment",
@@ -56,9 +56,9 @@ const ServicePage = () => {
                 src={item.image}
                 alt=""
                 className="w-full group-hover:scale-105 transition-transform duration-500 ease-in-out h-full object-cover object-center"
-                height={600}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                width={1500}
+                height={1000}
+                sizes="100vw"
+                width={2000}
               />
               <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t from-black/90 to-transparent inset-0">
                 <div className="templateContainer h-full w-full flex items-end justify-start py-4 lg:py-6">

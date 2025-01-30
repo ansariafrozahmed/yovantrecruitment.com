@@ -7,9 +7,12 @@ import OurClients from "@/components/Home/OurClients";
 import RequirementProcess from "@/components/Home/RequirementProcess/RequirementProcess";
 import TimelineProcess from "@/components/Layouts/Timeline/TimelineSection";
 import ParallaxScrollSection from "@/components/Wrappers/ParallaxWrapper/ParallaxScrollSection";
+import { homeFaqs } from "@/lib/faqs";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+export const revalidate = 60;
 
 const Home = () => {
   return (
@@ -69,16 +72,47 @@ const Home = () => {
         <Introduction />
       </div>
       {/* FOR DESKTOP */}
-      {/* <div className="hidden z-[10] lg:block" key={1}>
+      <div className="hidden z-[10] lg:block" key={1}>
         <Categories />
-      </div> */}
+      </div>
       {/* OUR CLASSES FOR MOBILE */}
-      {/* <div className="lg:hidden relative">
+      <div className="lg:hidden relative">
         <MobileCat />
-      </div> */}
+      </div>
+      <RequirementProcess />
       <OurClients />
-      {/* <FAQSection /> */}
-      {/* <RequirementProcess /> */}
+      <div className="templateContainer py-10 space-y-10">
+        <div className="space-y-3">
+          <h2
+            data-aos="fade-up"
+            className="text-center gradientHeading text-xl lg:text-3xl tracking-wide"
+          >
+            FAQs
+          </h2>
+          <div className="flex items-center justify-center">
+            <p
+              data-aos="fade-up"
+              className="lg:max-w-[40rem] text-center font-normal text-white text-sm tracking-wider"
+            >
+              We are committed to connecting top talent with the right
+              opportunities, ensuring success for both businesses and
+              professionals. Here are answers to common questions about our
+              services.
+            </p>
+          </div>
+        </div>
+        <div className="max-w-[55rem] mx-auto">
+          <FAQSection data={homeFaqs} />
+        </div>
+        <div className="flex items-center justify-center">
+          <button
+            data-aos="fade-up"
+            className="bg-gradient-to-r hover:opacity-90 tracking-wide from-darkGolden to-lightGolden px-6 py-2 rounded text-black"
+          >
+            <Link href={"/faqs"}>View all faqs</Link>
+          </button>
+        </div>
+      </div>
       {/* <TimelineProcess /> */}
       <HomeBlogs />
       {/* <WhyChoose /> */}

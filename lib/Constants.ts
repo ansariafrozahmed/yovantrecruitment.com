@@ -1,4 +1,4 @@
-export const defaultTitle = "Yovant Recruitement Services";
+export const defaultTitle = "Yovant Recruitment Services";
 export const defaultDescription = "";
 
 export const menu = [
@@ -11,7 +11,7 @@ export const menu = [
     url: "/about",
   },
   {
-    label: "Jobs",
+    label: "Job Listings",
     url: "/job",
   },
   {

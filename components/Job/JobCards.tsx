@@ -72,10 +72,10 @@ const JobCards: React.FC<Props> = ({ data }) => {
           <button className="w-full rounded-lg bg-[#14140c] p-2 text-sm tracking-wider">
             <Link href={"/job/slug"}>View details</Link>
           </button>
-          <Apply />
+          <Apply jobTitle={data?.title} />
         </div>
       </div>
-      <div className="py-3 text-center text-sm text-gray-400 group-hover:text-black tracking-wider">
+      <div className="pt-4 pb-1 font-sans text-center text-sm text-gray-400 group-hover:text-black tracking-wider">
         POSTED 2 DAY AGO
       </div>
     </div>
