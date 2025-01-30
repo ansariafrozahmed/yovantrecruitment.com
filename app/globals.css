@@ -132,7 +132,7 @@ body {
 /* Tooltip */
 .pin .tooltip {
   position: absolute;
-  bottom: 101px;
+  bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
@@ -170,7 +170,7 @@ body {
 
 .pin:hover::after {
   opacity: 1;
-  height: 100px;
+  height: 50px;
 }
 
 /* Pin Positions */

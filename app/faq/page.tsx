@@ -1,8 +1,38 @@
 import FAQsection from "@/components/FAQ/FAQSection";
 import NewBreadcrumb from "@/components/Layouts/Breadcrumb/NewBreadcrumb";
 import { pageFaqs } from "@/lib/faqs";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Frequently Asked Questions",
+  openGraph: {
+    title: "Frequently Asked Questions",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
+    url: `https://yovantrecruitment.com/faq`,
+    type: "website",
+    images: [
+      {
+        url: `${process.env.FRONTEND}/assets/logo/webp/golden.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Yovant Recruitment Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frequently Asked Questions",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
+    images: [`${process.env.FRONTEND}/assets/logo/golden.png`],
+  },
+  alternates: {
+    canonical: `${process.env.FRONTEND}/faq`,
+  },
+};
 
 const FAQs = () => {
   return (

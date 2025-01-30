@@ -1,39 +1,42 @@
-import { MapPin } from "lucide-react";
+import Branches from "@/components/Layouts/Branches";
+import { Metadata } from "next";
 import React from "react";
 
-const Branches = () => {
-  const locations = [
-    { name: "India", className: "india" },
-    { name: "UK", className: "uk" },
-    { name: "Bangladesh", className: "bangladesh" },
-    { name: "Pakistan", className: "pakistan" },
-    { name: "Philippines", className: "philippines" },
-    { name: "Nepal", className: "nepal" },
-    { name: "Saudi Arabia", className: "ksa" },
-    { name: "UAE", className: "uae" },
-    { name: "Uganda", className: "uganda" },
-    { name: "Ghana", className: "ghana" },
-    { name: "Sierra Leone", className: "sierraleone" },
-    { name: "Nigeria", className: "nigeria" },
-  ];
+export const metadata: Metadata = {
+  title: "Our Branches",
+  openGraph: {
+    title: "Our Branches",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
+    url: `https://yovantrecruitment.com/branches`,
+    type: "website",
+    images: [
+      {
+        url: `${process.env.FRONTEND}/assets/logo/webp/golden.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Yovant Recruitment Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Branches",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
+    images: [`${process.env.FRONTEND}/assets/logo/golden.png`],
+  },
+  alternates: {
+    canonical: `${process.env.FRONTEND}/branches`,
+  },
+};
 
+const Page = () => {
   return (
-    <div className="py-20 flex justify-center">
-      <div className="relative w-full max-w-4xl">
-        <img
-          src="/assets/largeImages/newmap.png"
-          className="w-full"
-          alt="map"
-        />
-        {locations.map((location, index) => (
-          <div key={index} className={`pin ${location.className} group`}>
-            <MapPin size={18} className="pin-icon" color="white" />
-            <span className="tooltip">{location.name}</span>
-          </div>
-        ))}
-      </div>
+    <div>
+      <Branches />
     </div>
   );
 };
 
-export default Branches;
+export default Page;

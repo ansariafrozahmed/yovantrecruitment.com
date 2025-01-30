@@ -4,8 +4,38 @@ import OurFounder from "@/components/AboutPage/OurFounder";
 import Breadcrumb from "@/components/Layouts/Breadcrumb/Breadcrumb";
 import NewBreadcrumb from "@/components/Layouts/Breadcrumb/NewBreadcrumb";
 import { Mail, MapIcon, MapPin, Phone } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  openGraph: {
+    title: "About Us",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
+    url: `https://yovantrecruitment.com/about`,
+    type: "website",
+    images: [
+      {
+        url: `${process.env.FRONTEND}/assets/logo/webp/golden.webp`,
+        width: 1200,
+        height: 630,
+        alt: "Yovant Recruitment Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us",
+    description:
+      "Welcome to Yovant Recruitment Services, a dynamic recruitment agency founded by Alex Farrow and Jayson Thankappan.",
+    images: [`${process.env.FRONTEND}/assets/logo/golden.png`],
+  },
+  alternates: {
+    canonical: `${process.env.FRONTEND}/about`,
+  },
+};
 
 const About = () => {
   const data = [
