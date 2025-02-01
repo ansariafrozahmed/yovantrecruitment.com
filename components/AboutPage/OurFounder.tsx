@@ -5,22 +5,22 @@ const OurFounder = () => {
   const founderData = [
     {
       image: "",
-      Name: "",
-      position: "",
+      Name: "Alex Farrow",
+      position: "Co-Founder & CEO",
       socialMedia: ["", ""],
     },
     {
       image: "",
-      Name: "",
-      position: "",
+      Name: "Jayson Thankappan",
+      position: "Co-Founder & CEO",
       socialMedia: ["", ""],
     },
-    {
-      image: "",
-      Name: "",
-      position: "",
-      socialMedia: ["", ""],
-    },
+    // {
+    //   image: "",
+    //   Name: "",
+    //   position: "",
+    //   socialMedia: ["", ""],
+    // },
   ];
   return (
     <div className=" templateContainer space-y-10 py-8 lg:py-16">
@@ -42,7 +42,7 @@ const OurFounder = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {founderData.map((item, index) => (
           <div data-aos="fade-up" key={index}>
-            <FounderCard />
+            <FounderCard data={item} />
           </div>
         ))}
       </div>

@@ -2,7 +2,7 @@ import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const FounderCard = () => {
+const FounderCard = ({ data }: any) => {
   return (
     <div className="bg-[#090B0C] rounded-2xl">
       <Image
@@ -16,8 +16,8 @@ const FounderCard = () => {
       />
       <div className="px-5 flex w-full py-6 gap-2 text-white">
         <div className="w-1/2 ">
-          <h2 className="text-[1.2rem] capitalize tracking-wider">John Doe</h2>
-          <h3 className="text-[0.85rem] tracking-wider">CEO, Founder</h3>
+          <h2 className="text-[1rem] capitalize tracking-wider">{data.Name}</h2>
+          <h3 className="text-[0.85rem] tracking-wider">{data.position}</h3>
         </div>
         <div className="w-1/2 flex gap-2 items-center justify-end">
           <Facebook size={25} strokeWidth={1.5} />

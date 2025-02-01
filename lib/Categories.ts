@@ -329,7 +329,7 @@ export const categories = [
   {
     image: "/assets/category/construction.webp",
     name: "Construction",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit. Illum est libero nemo Lorem, ipsum. ng elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "Construction is the foundation of modern infrastructure, shaping cities and communities. It involves planning, designing, and building structures that serve various purposes, from residential homes to commercial skyscrapers. ",
     slug: "construction",
     subCat: [
       {
@@ -346,7 +346,7 @@ export const categories = [
       },
       {
         name: "Block & Brick Masons",
-        image: "block-&-brick",
+        image: "/assets/category/block-&-brick.webp",
       },
       {
         name: "Tile Masons",
@@ -385,7 +385,7 @@ export const categories = [
   {
     image: "/assets/category/integrate-FM.webp",
     name: "Integrated FM",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit. Illum est libero nemo Lorem, ipsum. ng elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "ntegrated Facilities Management (IFM) streamlines and optimizes building operations by combining multiple services under a unified system. It encompasses maintenance, security, energy management, and sustainability practices to enhance efficiency and reduce operational costs. ",
     slug: "integrated-fm",
     subCat: [
       {
@@ -425,7 +425,7 @@ export const categories = [
   {
     image: "/assets/category/hospitality-&-tourism.webp",
     name: "Hospitality & Tourism",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit. Illum est libero nemo Lorem, ipsum. ng elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "The hospitality and tourism industry plays a vital role in global economies, offering unique experiences that connect people with cultures, destinations, and services. ",
     slug: "hospitality-and-tourism",
     subCat: [
       {
@@ -473,7 +473,7 @@ export const categories = [
   {
     image: "/assets/category/healthcare-worker.webp",
     name: "Healthcare Workers",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit. Illum est libero nemo Lorem, ipsum. ng elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "Healthcare workers are the backbone of medical systems, providing essential care and saving lives. Their dedication ensures the well-being of communities worldwide.",
     slug: "healthcare-workers",
     subCat: [
       {
@@ -513,7 +513,7 @@ export const categories = [
   {
     image: "/assets/category/specialized-worker.webp",
     name: "Specialized Workers",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit. Illum est libero nemo Lorem, ipsum. ng elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "Specialized workers possess advanced skills and expertise in specific fields, ensuring precision and efficiency. Their knowledge drives innovation and quality across industries.",
     slug: "specialized-workers",
     subCat: [
       {
@@ -545,7 +545,7 @@ export const categories = [
   {
     image: "/assets/category/retail-worker.webp",
     name: "Retail Workers",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit. Illum est libero nemo Lorem, ipsum. ng elit. Illum est liber ipsum dolor sit amet consectetur adipisicing elit.",
+    text: "Retail workers are the frontline of customer service, ensuring smooth shopping experiences. Their dedication keeps stores running efficiently and customers satisfied.",
     slug: "retail-workers",
     subCat: [
       {

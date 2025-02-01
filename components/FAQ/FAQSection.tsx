@@ -19,7 +19,7 @@ const FAQsection: React.FC<FAQsProps> = ({ data }) => {
     <div className="">
       <div className="space-y-4">
         {data.map((faq, index) => (
-          <div key={index} className="text-white">
+          <div data-aos="fade-up" key={index} className="text-white">
             {/* Question */}
             <button
               className={`w-full flex justify-between items-center rounded-md px-4 py-6 text-left bg-[#14140c] tracking-wider text-white hover:bg-[#1f1f12] focus:outline-none ${

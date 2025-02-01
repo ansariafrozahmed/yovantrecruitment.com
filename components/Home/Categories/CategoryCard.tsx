@@ -15,7 +15,7 @@ const CatCard: React.FC<Props> = ({ data }) => {
     <Link
       data-aos="fade-up"
       href={`/category/${data.slug}`}
-      className="block relative group w-[300px] h-auto space-y-3"
+      className="block relative group  overflow-hidden w-[300px] h-auto space-y-3"
     >
       <div className="relative h-auto w-full">
         <Image
@@ -26,7 +26,7 @@ const CatCard: React.FC<Props> = ({ data }) => {
           alt={`Image`}
           height={800}
           width={800}
-          className="h-[400px] w-[300px] group-hover:-translate-y-2 transition-transform ease-in-out duration-300 object-cover"
+          className="h-[400px] w-[300px]  group-hover:-translate-y-2 transition-transform ease-in-out duration-300 object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent top-0 left-0"></div>
       </div>
