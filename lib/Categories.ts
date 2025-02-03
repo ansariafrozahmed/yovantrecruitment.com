@@ -398,11 +398,11 @@ export const categories = [
       },
       {
         name: "Building Maintenance Men",
-        image: "/assets/category/building-maintenance.webp",
+        image: "/assets/category/building-maintenace.webp",
       },
       {
         name: "HVAC Building Maintenance Men",
-        image: "/assets/category/hvac-maintenance.webp",
+        image: "/assets/category/hvac-maintenace.webp",
       },
       {
         name: "PSBD Security Guards (Male & Female)",

@@ -2,10 +2,6 @@ export const defaultTitle = "Yovant Recruitment Services";
 export const defaultDescription = "";
 
 export const menu = [
-  //   {
-  //     label: "Home",
-  //     url: "/",
-  //   },
   {
     label: "About Us",
     url: "/about",
@@ -35,6 +31,32 @@ export const menu = [
   {
     label: "Categories We Provide",
     url: "/category",
+    subMenu: [
+      {
+        label: "Construction",
+        url: "/category/construction",
+      },
+      {
+        label: "Integrated FM",
+        url: "/category/integrated-fm",
+      },
+      {
+        label: "Hospitality & Tourism",
+        url: "/category/hospitality-and-tourism",
+      },
+      {
+        label: "Healthcare Workers",
+        url: "/category/healthcare-workers",
+      },
+      {
+        label: "Specialized Workers",
+        url: "/category/specialized-workers",
+      },
+      {
+        label: "Retail Workers",
+        url: "/category/retail-workers",
+      },
+    ],
   },
   // {
   //   label: "Bulk Recruitment Process",

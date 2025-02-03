@@ -78,6 +78,8 @@ const Home = () => {
         <MobileCat />
       </div>
       <OurClients />
+
+      <RequirementProcess />
       <div className="templateContainer py-10 space-y-10">
         <div className="space-y-3">
           <h2
@@ -110,7 +112,6 @@ const Home = () => {
           </button>
         </div>
       </div>
-      {/* <RequirementProcess /> */}
       {/* <TimelineProcess /> */}
       <HomeBlogs />
       {/* <WhyChoose /> */}

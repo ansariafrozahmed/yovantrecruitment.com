@@ -73,7 +73,7 @@ const Categorydetail = async ({ params }: any) => {
           id="enquire-form"
           className="py-12 lg:py-14 flex items-center justify-center"
         >
-          <CategoryForm />
+          <CategoryForm catName={catData?.name} />
         </div>
       </div>
     </div>

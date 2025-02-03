@@ -1,7 +1,48 @@
+"use client";
+import { sendCategoryEnquiry } from "@/utils/categoryEnquiry";
 import { Mail, MessageCircle, Phone, User } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
-const CategoryForm = () => {
+interface Props {
+  catName?: string;
+}
+
+const CategoryForm: React.FC<Props> = ({ catName }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    try {
+      const response = sendCategoryEnquiry({
+        catName: catName,
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      });
+      if (response) {
+        toast.success("Application Submitted!");
+      }
+    } catch (error) {
+      console.error(error);
+      toast("Something went wrong, please try again.");
+    }
+  };
   return (
     <div className="w-full bg-black px-10 py-8 space-y-6 rounded-lg max-w-[480px] lg:w-[100%]">
       <div className="space-y-1">
@@ -12,15 +53,15 @@ const CategoryForm = () => {
           Our customer service team will respond within 24-72 hours.
         </p>
       </div>
-      <form className="space-y-9">
+      <form className="space-y-9" onSubmit={handleSubmit}>
         <div className="flex gap-3 items-center border-b py-2">
           <User size={20} color="#FBD973" strokeWidth={1} />
           <input
             type="text"
             name="name"
-            // value={formData.name}
+            value={formData.name}
             required
-            // onChange={handleChange}
+            onChange={handleChange}
             className="bg-black capitalize w-full focus:outline-none"
             placeholder="Your Name"
           />
@@ -31,8 +72,8 @@ const CategoryForm = () => {
             type="email"
             name="email"
             required
-            // value={formData.email}
-            // onChange={handleChange}
+            value={formData.email}
+            onChange={handleChange}
             className="bg-black  w-full focus:outline-none"
             placeholder="Your Email"
           />
@@ -42,8 +83,8 @@ const CategoryForm = () => {
           <input
             type="text"
             name="phone"
-            // value={formData.phone}
-            // onChange={handleChange}
+            value={formData.phone}
+            onChange={handleChange}
             className="bg-black capitalize w-full focus:outline-none"
             required
             placeholder="Your Contact"
@@ -52,9 +93,9 @@ const CategoryForm = () => {
         <div className="flex gap-3 items-start border-b py-2">
           <MessageCircle size={20} color="#FBD973" strokeWidth={1} />
           <textarea
-            // name="phone"
-            // value={formData.phone}
-            // onChange={handleChange}
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
             className="bg-black h-14 capitalize w-full focus:outline-none"
             required
             placeholder="Message"
